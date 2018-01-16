@@ -6,6 +6,10 @@ var uph = {lat: 60.388588, lng: 5.323424} // Ulrikke Pihls Hus
 // Adjustable marker position depending on user input
 var markerPosition = uib;
 
+/**
+ * Function for adjusting the lat and lng to users request
+ * Author: (Øyvind Johannessen)
+**/
 function markerByInput(input) {
   if(input == "uib") {
     markerPosition = uib;
