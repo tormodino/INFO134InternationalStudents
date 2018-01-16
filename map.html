@@ -6,24 +6,34 @@ trying to establish them selv in Norway -->
     <title>Welcome</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mapstyle.css">
     <script src="js/script.js"></script>
+    <script src="js/mapscript.js"></script>
   </head>
   <body>
     <div class="top">
-      <!-- Her bør innholdet være den samme for hver side.
+      <!-- Her bï¿½r innholdet vï¿½re den samme for hver side.
             - Topp
             - Navigation bar
           -->
 
     </div>
     <div class="mid">
-      <!-- Her endrer vi innholdet basert på hvilken side man er på. -->
+      <!-- Her endrer vi innholdet basert pï¿½ hvilken side man er pï¿½. -->
+      <!-- header for this page -->
+      <h1>Map</h1>
+      <!-- the map (Ã˜yvind Johannessen) -->
+      <div id="map"></div>
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs4DSTZ0yFpxhTdHSWLS7fSjTv94B7kSM&callback=initMap">
+      </script>
+    </div>
 
     </div>
     <div class="bottom">
-      <!-- Her bør innholdet være den samme for hver side.
-        - Navn på prosjektmedarbeidere
+      <!-- Her bï¿½r innholdet vï¿½re den samme for hver side.
+        - Navn pï¿½ prosjektmedarbeidere
         -
 
       -->
