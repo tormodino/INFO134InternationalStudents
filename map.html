@@ -1,33 +1,64 @@
 <!-- Map page for Bergensproject. This site is for exchange students
 trying to establish them selv in Norway -->
 <!Doctype HTML>
-<html>
+<html lang="en">
   <head>
-    <title>Welcome</title>
+    <title>Interactive Map of Bergen</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
   </head>
-  <body>
-    <div class="top">
-      <!-- Her bør innholdet være den samme for hver side.
-            - Topp
-            - Navigation bar
-          -->
+  <header class="Header">
+    <!-- Her bÃ¸r innholdet vÃ¦re den samme for hver side.
+          - Topp
+          - Navigation bar
+        -->
 
-    </div>
-    <div class="mid">
-      <!-- Her endrer vi innholdet basert på hvilken side man er på. -->
+  </header>
+  <main>
+    <!-- Her endrer vi innholdet basert pÃ¥ hvilken side man er pÃ¥. -->
+    <section class="top">
+      <figure class="map">
+          <!-- Insert map here -->
+          <figcaption class="mapDescription">Handy locations to know in Bergen</figcaption>
+      </figure>
+    </section>
+    <section class="dropdown">
+      <select class="dropdown-menu">
+        <option value="drinking">Clubs and bars</option>
+        <option value="uib">University buildings</option>
+        <option value="culture">Entertainment and culture</option>
+        <option value="hikes">Nature hikes</option>
+        <option value="stores">Useful shops</option>
+      </select>
+    </section>
+    <section class="table-of-contents">
+      <div class="location generic">
+        <div class="location-image">
+            <p>Image goes here</p>
+        </div>
+        <div class="location-info">
+          <div class="location-name">
+            <h3>Location name</h3>
+          </div>
+          <div class="location-description">
+            <p>At this location you can find bladiblah, blah, and blah.</p>
+          </div>
+        </div>
+        <div class="location-button">
+          <button value="pinpoint">Mark!</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <!-- Her bÃ¸r innholdet vÃ¦re den samme for hver side.
+      - Navn pÃ¥ prosjektmedarbeidere
+      -
 
-    </div>
-    <div class="bottom">
-      <!-- Her bør innholdet være den samme for hver side.
-        - Navn på prosjektmedarbeidere
-        -
+    -->
 
-      -->
-
-    </div>
+  </footer>
   </body>
 </html>
