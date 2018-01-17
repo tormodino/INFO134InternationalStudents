@@ -1,0 +1,11 @@
+/**
+ * MAP
+ * Stylesheet for map
+ * ID: #map
+ * Author: (Øyvind Johannessen)
+**/
+ #map {
+   width: 100%;
+   height: 400px;
+   background-color: grey;
+ }

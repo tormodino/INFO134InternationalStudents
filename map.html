@@ -7,7 +7,9 @@ trying to establish them selv in Norway -->
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mapstyle.css">
     <script src="js/script.js"></script>
+    <script src="js/mapscript.js"></script>
   </head>
   <header class="Header">
     <!-- Her bør innholdet være den samme for hver side.
@@ -20,7 +22,13 @@ trying to establish them selv in Norway -->
     <!-- Her endrer vi innholdet basert på hvilken side man er på. -->
     <section class="top">
       <figure class="map">
-          <!-- Insert map here -->
+          <!-- header for this page -->
+          <h1>Map</h1>
+          <!-- the map (Øyvind Johannessen) -->
+          <div id="map"></div>
+          <script async defer
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs4DSTZ0yFpxhTdHSWLS7fSjTv94B7kSM&callback=initMap">
+          </script>
           <figcaption class="mapDescription">Handy locations to know in Bergen</figcaption>
       </figure>
     </section>
