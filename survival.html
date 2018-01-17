@@ -1,33 +1,62 @@
 <!-- Survival page for Bergensproject. This site is for exchange students
 trying to establish them selv in Norway -->
 <!Doctype HTML>
-<html>
+<html lang="en">
   <head>
-    <title>Welcome</title>
+    <title>Bergen Survival Guide</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link rel="stylesheet" src="css/style.css">
+    <link rel="stylesheet" href="css/style.css">
     <script src="js/script.js"></script>
   </head>
   <body>
-    <div class="top">
-      <!-- Her bør innholdet være den samme for hver side.
+    <header class="site">
+      <!-- Her bÃ¸r innholdet vÃ¦re den samme for hver side.
             - Topp
             - Navigation bar
           -->
 
-    </div>
-    <div class="mid">
-      <!-- Her endrer vi innholdet basert på hvilken side man er på. -->
-
-    </div>
-    <div class="bottom">
-      <!-- Her bør innholdet være den samme for hver side.
-        - Navn på prosjektmedarbeidere
+    </header>
+    <main>
+      <!-- Her endrer vi innholdet basert pÃ¥ hvilken side man er pÃ¥. -->
+      <section class="top">
+        <figure class="map">
+            <!-- Insert map here -->
+            <figcaption class="mapDescription">Handy locations to know in Bergen</figcaption>
+        </figure>
+      </section>
+      <section class="dropdown">
+        <select class="dropdown-menu">
+          <option value="dating">Dating in Norway</option>
+          <option value="friendships">Making friends (Is it possible?)</option>
+          <option value="student-life">Student life in Bergen</option>
+          <option value="finances">Surviving financially (Is it possible?)</option>
+          <option value="public transportation">Public transportation</option>
+          <option value="hitchhikers">Don't panic, bring a towel.</option>
+        </select>
+      </section>
+      <section class="table-of-contents">
+        <section class="dating">
+        </section>
+        <section class="friendships">
+        </section>
+        <section class="student-life">
+        </section>
+        <section class="finances">
+        </section>
+        <section class="public-transportation">
+        </section>
+        <section class="hitchhikers">
+        </section>
+      </section>
+    </main>
+    <footer>
+      <!-- Her bÃ¸r innholdet vÃ¦re den samme for hver side.
+        - Navn pÃ¥ prosjektmedarbeidere
         -
 
       -->
 
-    </div>
+    </footer>
   </body>
 </html>

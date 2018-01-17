@@ -1,1 +1,36 @@
-css
+
+
+/**
+* MAIN PAGE Structure
+* RHJ -
+*/
+main{
+  display: flex;
+  flex-direction: column;
+
+}
+
+/**
+* MAP PAGE
+* RHJ -
+*/
+.dropdown-menu {
+  width: 100%;
+}
+
+.location {
+  border: 1px solid;
+  display: flex;
+}
+.location-image {
+  flex: 0.5 0 auto;
+}
+
+.location-info {
+  flex: 1 0 auto;
+}
+
+.location-button {
+  align-self: center;
+  flex: 0.5 0 auto;
+}
