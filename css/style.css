@@ -12,20 +12,52 @@ main{
 * MAP PAGE
 * RHJ -
 */
+.mapDescription {
+  margin: 5px;
+}
+
 .dropdown-menu {
   width: 100%;
+  margin: 5px;
+  border: 1px solid;
 }
 
 .location {
+  margin: 5px;
+  max-width: 100%;
   border: 1px solid;
+  border-radius: 8px;
   display: flex;
+  background-color: darkgrey;
 }
 .location-image {
   flex: 0.5 0 auto;
+  width: 25%;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: lightgrey;
+}
+
+.img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 75%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid;
 }
 
 .location-info {
   flex: 1 0 auto;
+  width: 50%;
+  margin: 5px;
+  border: 1px solid;
+  border-radius: 8px;
+  padding: 5px;
+  background-color: lightgrey;
 }
 
 .location-button {

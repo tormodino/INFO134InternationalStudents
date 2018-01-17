@@ -16,7 +16,6 @@ trying to establish them selv in Norway -->
           - Topp
           - Navigation bar
         -->
-
   </header>
   <main>
     <!-- Her endrer vi innholdet basert på hvilken side man er på. -->
@@ -33,7 +32,7 @@ trying to establish them selv in Norway -->
       </figure>
     </section>
     <section class="dropdown">
-      <select class="dropdown-menu">
+      <select onchange="getLocationsByCatogary(value);" class="dropdown-menu">
         <option value="drinking">Clubs and bars</option>
         <option value="uib">University buildings</option>
         <option value="culture">Entertainment and culture</option>
@@ -44,18 +43,29 @@ trying to establish them selv in Norway -->
     <section class="table-of-contents">
       <div class="location generic">
         <div class="location-image">
-            <p>Image goes here</p>
+            <p id="loc-image1">
+              <img class="img" src="img/locationImages/uib.jpg" alt="University of Bergen">
+            </p>
         </div>
         <div class="location-info">
           <div class="location-name">
-            <h3>Location name</h3>
+            <h3 id="loc-name1">University of Bergen</h3>
           </div>
           <div class="location-description">
-            <p>At this location you can find bladiblah, blah, and blah.</p>
+            <p id="loc-description1">
+              With its 16,900 students and 3,700 employees, the University of
+              Bergen is a medium-sized European university. Central parts of the
+              campus are located in the city center. The University of Bergen is
+              both an educational institution and a research institution that
+              covers most disciplines, organized in seven faculties and around
+              54 institutes and academic centers. The University of Bergen is
+              also part of a global network of students, researchers and
+              knowledge institutions.
+            </p>
           </div>
         </div>
         <div class="location-button">
-          <button value="pinpoint">Mark!</button>
+          <button onclick="markerByInput(value);" id="mark-button" value="uib">Mark!</button>
         </div>
       </div>
     </section>
