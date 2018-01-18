@@ -2,9 +2,29 @@
 * MAIN PAGE Structure
 * RHJ -
 */
+html{
+  margin: 0 25% 0 25%;
+
+}
+
 main{
   display: flex;
   flex-direction: column;
+
+}
+/**
+* FRONT PAGE
+* RHJ -
+*/
+.frontpage {
+  display:flex;
+}
+
+.information {
+  width: 60%;
+}
+
+.interactivity {
 
 }
 
