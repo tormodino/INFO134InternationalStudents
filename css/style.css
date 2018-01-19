@@ -25,7 +25,6 @@ NG
 header{
   background-color: #0B3861;
   width:100%;
-  top: 0;
   margin-bottom: 5px;
 }
 .nav{
@@ -43,6 +42,7 @@ header{
   text-decoration:none;
   padding:10px;
   display: block;
+  margin: 0;
 }
 .nav a:hover{
   background-color: #963307;
@@ -57,6 +57,9 @@ header{
 }
 #ul{
   list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 0;
 }
 #li{
   float: left;
