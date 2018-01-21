@@ -1,6 +1,9 @@
 /**
 *These are the colors we use
-*#0B3861 header
+*#0B3861 header lyser
+*navigation bar blå #022340
+*hover oransje: #963307
+*font farge #dadad9
 */
 
 /**
@@ -25,7 +28,7 @@ NG
 header{
   background-color: #0B3861;
   width:100%;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 .nav{
   background-color: #022340;
@@ -33,6 +36,7 @@ header{
   margin: 0;
   padding:0;
   overflow:hidden;
+  font-family: sans-serif;
 
 }
 .nav a{
@@ -66,9 +70,23 @@ header{
 }
 #logo{
   width:10%;
+  padding-left: 4px;
 }
 #fjell{
   width:5%;
+}
+/**footer
+*NG
+**/
+footer{
+  width:100%;
+  background-color: #0B3861;
+  color:#dadad9;
+  padding:10px;
+}
+#footer_overskrift{
+  color:#963307;
+  font-family: sans-serif;
 }
 /**
 * FRONT PAGE
@@ -83,9 +101,22 @@ header{
 }
 
 .interactivity {
+  float: right;
+  margin:0;
+  padding:0;
 
 }
-
+#facebook{
+  width:30%;
+}
+#search{
+  display:block;
+  background-color: #0B3861;
+  color:#dadad9;
+  padding:4px;
+  font-family: sans-serif;
+  font-weight:lighter;
+}
 /**
 * MAP PAGE
 * RHJ -
