@@ -1,16 +1,74 @@
 /**
+*These are the colors we use
+*#0B3861 header
+*/
+
+/**
 * MAIN PAGE Structure
 * RHJ -
 */
-html{
-  margin: 0 25% 0 25%;
-
-}
 
 main{
   display: flex;
   flex-direction: column;
+  background-color: white;
 
+}
+body{
+    margin: 0 10% 0 10%;
+  /**background-color: #0B3861;**/
+}
+/**
+*header
+NG
+**/
+header{
+  background-color: #0B3861;
+  width:100%;
+  margin-bottom: 5px;
+}
+.nav{
+  background-color: #022340;
+  width:100%;
+  margin: 0;
+  padding:0;
+  overflow:hidden;
+
+}
+.nav a{
+  text-align: center;
+  transition: all 0.3s ease;
+  color: #dadad9;
+  text-decoration:none;
+  padding:10px;
+  display: block;
+  margin: 0;
+}
+.nav a:hover{
+  background-color: #963307;
+  color: white;
+  text-decoration: none;
+}
+.nav a.active{
+  background-color: #963307;
+  color: white;
+  text-decoration: none;
+  opacity: 0.8;
+}
+#ul{
+  list-style-type: none;
+  float: left;
+  margin: 0;
+  padding: 0;
+}
+#li{
+  float: left;
+}
+#logo{
+  width:10%;
+}
+#fjell{
+  width:5%;
 }
 /**
 * FRONT PAGE
