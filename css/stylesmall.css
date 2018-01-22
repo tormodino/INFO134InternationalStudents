@@ -140,6 +140,27 @@ footer{
   display: flex;
   background-color: darkgrey;
 }
+
+#drinking {
+  display: none;
+}
+
+#uib {
+  display: none;
+}
+
+#culture {
+  display: none;
+}
+
+#hikes {
+  display: none;
+}
+
+#stores {
+  display: none;
+}
+
 .location-image {
   flex: 0.5 0 auto;
   width: 25%;
