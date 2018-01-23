@@ -6,9 +6,7 @@ trying to establish them selv in Norway -->
     <title>Interactive Map of Bergen</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/styledefault.css" media="">
-    <link rel="stylesheet" href="css/stylebig.css" media="only screen  and (min-width : 1824px)">
-    <link rel="stylesheet" href="css/stylesmall.css" media="only screen and (min-device-width : 320px) and (max-device-width : 480px)">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mapstyle.css">
     <script src="js/script.js"></script>
     <script src="js/mapscript.js"></script>
@@ -36,7 +34,6 @@ trying to establish them selv in Norway -->
       <!-- Structural design by Roy H. Jenssen
           Her endres innholdet avhengig av hvilken side man er på.-->
     <section class="top">
-      <figure class="map">
           <!-- header for this page -->
           <h1>Map</h1>
           <!-- the map (Øyvind Johannessen) -->
@@ -44,8 +41,6 @@ trying to establish them selv in Norway -->
           <script async defer
             src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCs4DSTZ0yFpxhTdHSWLS7fSjTv94B7kSM&callback=initMap">
           </script>
-          <figcaption class="mapDescription">Handy locations to know in Bergen</figcaption>
-      </figure>
     </section>
     <section class="dropdown">
       <select onchange="getRequestedTable(value);" class="dropdown-menu">
