@@ -1,74 +1,384 @@
-<!-- Survival page for Bergensproject. This site is for exchange students
-trying to establish them selv in Norway -->
-<!Doctype HTML>
+<!--
+7 Mountain Survival Guide:
+An Exchange Student Tells all
+-->
+
+<!doctype html>
 <html lang="en">
+<!--
+
+  -->
   <head>
     <title>Bergen Survival Guide</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/SurviveInStyle.css">
+    <script src="js/SurvivalScript.js"></script>
     <link rel="icon" type="image/ico" href="img/logo/bis_xOP_icon.ico">
   </head>
+  <!--
+
+  -->
   <body>
     <!--header NG-->
     <header class="site">
+      <img src="img/logo/fjellene.png"  id="fjell">
       <a href="index.html">
-          <img src="img/logo/logo.png" alt="Bergen International Student" id="logo">
+        <img src="img/logo/logo.png" alt="Bergen International Student" id="logo">
       </a>
-       <img src="img/logo/fjellene.png"  id="fjell">
-       <img src="img/logo/fjellet.png"  id="fjell">
-       <img src="img/logo/fjellene.png"  id="fjell">
-       <br>
-       <!--Den linken som er aktiv her har en klasse som gjør at den lyser opp i headeren-->
-       <nav class="nav">
-          <ul>
-            <li><a href="index.html">Frontpage</a></li>
-            <li><a href="map.html">Map</a></li>
-            <li><a class="active" href="survival.html">Survival Guide</a></li>
-          </ul>
+      <img src="img/logo/fjellet.png"  id="fjell">
+      <img src="img/logo/fjellene.png"  id="fjell">
+      <br>
+      <!--Den linken som er aktiv her har en klasse som gjør at den lyser opp i headeren-->
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Frontpage</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a class="active" href="survival.html">Survival Guide</a></li>
+        </ul>
       </nav>
     </header>
+    <!--
+
+    -->
     <main>
-      <!-- Her endrer vi innholdet basert på hvilken side man er på. -->
-      <section class="top">
-        <figure class="map">
-            <!-- Insert map here -->
-            <figcaption class="mapDescription">Handy locations to know in Bergen</figcaption>
-        </figure>
-      </section>
-      <section class="dropdown">
-        <select class="dropdown-menu">
-          <option value="dating">Dating in Norway</option>
-          <option value="friendships">Making friends (Is it possible?)</option>
-          <option value="student-life">Student life in Bergen</option>
-          <option value="finances">Surviving financially (Is it possible?)</option>
-          <option value="public transportation">Public transportation</option>
-          <option value="hitchhikers">Don't panic, bring a towel.</option>
-        </select>
-      </section>
-      <section class="table-of-contents">
-        <section class="dating">
+      <div class="SurvivalPage">
+
+          <section class="table-of-contents">
+            <div id="heart"></div>
+
+<!-- KJEMPETEST
+*** Hele denne seksjonen skal skrives om. Grunnkoden til Øyvind som brukes for å vise informasjon
+basert på hva som velges i dropdown-menyen er god, men innholdet skal endres helt.
+Søk- og sosialmedia-tyranniet skal gjøres like de andre sidene etc etc.
+
+Vi bør også vurdere hvilket innhold som er best egnet til å vise kjernefunksjonaliteten til siden(e).
+Less is more, in a presentation-sammenheng.
+
+-TRL
+-->
+
+          <section class="dropdown">
+            <select onchange="getRequestedTable(value);" class="dropdown-menu">
+              <option value="initial" selected>Would you really like to know?</option>
+              <option value="dating">Dating in Norway</option>
+              <option value="friendships">Making friends (Is it possible?)</option>
+              <option value="student-life">Student life in Bergen</option>
+              <option value="finances">Surviving financially (Is it possible?)</option>
+              <option value="public transportation">Public transportation</option>
+              <option value="hitchhikers">Don't panic, bring a towel.</option>
+            </select>
+          </section>
+
+          <section class="table-of-contents">
+            <div class="initial"> <!--Lastes først-->
+
+
+          <div id="dating"> <!-- Hete kvelder og koz etc-->
+            <div class="location dating"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location dating"> <!-- -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location dating"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location drinking"> <!-- -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+          </div>
+          <div id=""> <!--  -->
+            <div class="location uib">
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location uib"> <!-- Ulrike Pihls Hus -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location uib"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location uib"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location uib"> <!-- -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+          </div>
+          <div id=""> <!--  -->
+            <div class="location culture"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location culture"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+            <div class="location culture"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3> </h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+          </div>
+          <div id=""> <!--  -->
+            <div class="location culture"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt="">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3></h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+          </div>
+          <div id=""> <!--  -->
+            <div class="location culture"> <!--  -->
+              <div class="location-image">
+                    <img class="img" src="" alt=" ">
+              </div>
+              <div class="location-info">
+                <div class="location-name">
+                  <h3> </h3>
+                </div>
+                <div class="location-description">
+                  <p>
+
+                  </p>
+                </div>
+              </div>
+              <div class="location-button">
+                <button onclick="markerByInput(value);" id="mark-button" value="">Help me, Oh Big One!</button>
+              </div>
+            </div>
+
+
+
+          <!-- Page search og lenker til sosiale media -->
         </section>
-        <section class="friendships">
+
+        <section class="interactivity">
+          <h2 class="interactiveHeader search">Search our page:</h2>
+          <form action="">
+            <input type="text" name="searchQuery">
+            <input type="submit" value="submit">
+          </form>
+          <h2 class="interactiveHeader search">Follow us on Facebook</h2>
+          <a href="https://www.facebook.com/groups/187907191801247/?source=create_flow" target="_blank">
+            <img src="https://images.sftcdn.net/images/t_optimized,f_auto/p/8a6eafba-96d2-11e6-b334-00163ec9f5fa/77332936/facebook-logo.png" alt="Facebook" id="facebook">
+          </a>
+          <h2 class="interactiveHeader search">Sponsors:</h2>
         </section>
-        <section class="student-life">
-        </section>
-        <section class="finances">
-        </section>
-        <section class="public-transportation">
-          <h3>Public transportation</h3>
-          <p></p>
-        </section>
-        <section class="hitchhikers">
-        </section>
-      </section>
-    </main>
+      </div>
+
+
+      </main>
+
     <footer>
-      <!-- Her bør innholdet være den samme for hver side.
-        - Navn på prosjektmedarbeidere
-        -
-      -->
+      <h3 id="footer_overskrift">Om BIS</h3>
+      <p>
+        Bergen International Student er en side laget for faget INFO134 på UIB.
+        Dette er laget av gruppemedlemmene:
+        Her kan det også stå noe helt annet.
+        Kan kopieres til de andre da.
+      </p>
+      <p>
+        <ul>
+            <li>Nora Gedde (nge005)</li>
+            <li>Tormod Renberg Lerøy</li>
+            <li>Roy H. Jenssen</li>
+            <li>Øyvind Johannessen</li>
+        </ul>
+      </p>
     </footer>
+    <!-- <script>
+function myFunction(){
+    document.getElementsByClassName("dating").removeAttribute("hidden");
+  }
+</script> -->
   </body>
+
 </html>
