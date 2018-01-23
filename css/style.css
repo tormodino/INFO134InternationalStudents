@@ -193,6 +193,13 @@ footer{
   margin: 5px;
 }
 
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .dropdown-menu {
   width: 100%;
   margin: 5px;
