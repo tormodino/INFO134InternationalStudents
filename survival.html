@@ -1,74 +1,145 @@
-<!-- Survival page for Bergensproject. This site is for exchange students
-trying to establish them selv in Norway -->
-<!Doctype HTML>
+<!--
+7 Mountain Survival Guide:
+An Exchange Student Tells all
+-->
+
+<!doctype html>
 <html lang="en">
+<!--
+
+  -->
   <head>
     <title>Bergen Survival Guide</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width = device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
+    <link rel="stylesheet" href="css/SurviveInStyle.css">
+    <script src="js/SurvivalScript.js"></script>
     <link rel="icon" type="image/ico" href="img/logo/bis_xOP_icon.ico">
   </head>
+  <!--
+
+  -->
   <body>
-    <!--header NG-->
+    <!--header NG
+
+      Foreslått endring av header banner 23012018 (TRl): Jeg satte logoen mellom de syv fjellene. Litt passende :D
+    -->
     <header class="site">
+      <img src="img/logo/fjellene.png"  id="fjell">
       <a href="index.html">
-          <img src="img/logo/logo.png" alt="Bergen International Student" id="logo">
+        <img src="img/logo/logo.png" alt="Bergen International Student" id="logo">
       </a>
-       <img src="img/logo/fjellene.png"  id="fjell">
-       <img src="img/logo/fjellet.png"  id="fjell">
-       <img src="img/logo/fjellene.png"  id="fjell">
-       <br>
-       <!--Den linken som er aktiv her har en klasse som gjør at den lyser opp i headeren-->
-       <nav class="nav">
-          <ul>
-            <li><a href="index.html">Frontpage</a></li>
-            <li><a href="map.html">Map</a></li>
-            <li><a class="active" href="survival.html">Survival Guide</a></li>
-          </ul>
+      <img src="img/logo/fjellet.png"  id="fjell">
+      <img src="img/logo/fjellene.png"  id="fjell">
+      <br>
+      <!--Den linken som er aktiv her har en klasse som gjør at den lyser opp i headeren-->
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Frontpage</a></li>
+          <li><a href="map.html">Map</a></li>
+          <li><a class="active" href="survival.html">Survival Guide</a></li>
+        </ul>
+      </nav>
+      <nav class="nav">
+        <ul>
+          <li><a onclick=hideMe("myHeart") href="#">Dating</a></li>
+          <li><a onclick=hideMe("myFriends") href="#">Friendships</a></li>
+          <li><a onclick=hideMe("myLife") href="#">Student Life</a></li>
+          <li><a onclick=hideMe("myMoney") href="#">Friendships</a></li>
+          <li><a onclick=hideMe("myTransport") href="#">Public Transportation</a></li>
+          <li><a onclick=hideMe("myFreeRide") href="#">Hitchhiker's Guide</a></li>
+        </ul>
       </nav>
     </header>
-    <main>
-      <!-- Her endrer vi innholdet basert på hvilken side man er på. -->
-      <section class="top">
-        <figure class="map">
-            <!-- Insert map here -->
-            <figcaption class="mapDescription">Handy locations to know in Bergen</figcaption>
-        </figure>
-      </section>
-      <section class="dropdown">
-        <select class="dropdown-menu">
-          <option value="dating">Dating in Norway</option>
-          <option value="friendships">Making friends (Is it possible?)</option>
-          <option value="student-life">Student life in Bergen</option>
-          <option value="finances">Surviving financially (Is it possible?)</option>
-          <option value="public transportation">Public transportation</option>
-          <option value="hitchhikers">Don't panic, bring a towel.</option>
-        </select>
-      </section>
-      <section class="table-of-contents">
-        <section class="dating">
+    <!--
+
+    -->
+<main>
+
+<div class="frontpage">
+<section class="information">
+  <section class="front-picture">
+    <img class="" src="#" alt="" >
+  </section>
+
+    <section class="main-text-body">
+
+<!-- De forskjellige seksjonene for informasjon -->
+
+  <div style="display:none" id="myHeart">
+    <p>Dating in Norway</p>
+    <div id="heart"></div>
+  </div>
+
+  <div style="display:none" id="myFriends">
+    <p>Making friends (Is it possible?)</p>
+  </div>
+
+  <div style="display:none" id="myLife">
+    <p>Student life in Bergen</p>
+  </div>
+
+  <div style="display:none" id="myMoney">
+    <p>Surviving financially (Is it possible?)</p>
+  </div>
+
+  <div style="display:none" id="myTransport">
+    <p>Public transportation</p>
+  </div>
+
+  <div style="display:none" id="myFreeRide">
+    <p>Don't panic, bring a towel.</p>
+  </div>
+
+</section>
+</section>
+<!-- /de forskjellige seksjonene for informasjon -->
+
+<!-- Page search og lenker til sosiale media -->
+
+
+
+        <section class="interactivity">
+          <h2 class="interactiveHeader search">Search our page:</h2>
+          <form action="">
+            <input type="text" name="searchQuery">
+            <input type="submit" value="submit">
+          </form>
+          <h2 class="interactiveHeader search">Follow us on Facebook</h2>
+          <a href="https://www.facebook.com/groups/187907191801247/?source=create_flow" target="_blank">
+            <img src="https://images.sftcdn.net/images/t_optimized,f_auto/p/8a6eafba-96d2-11e6-b334-00163ec9f5fa/77332936/facebook-logo.png" alt="Facebook" id="facebook">
+          </a>
+          <h2 class="interactiveHeader search">Sponsors:</h2>
         </section>
-        <section class="friendships">
-        </section>
-        <section class="student-life">
-        </section>
-        <section class="finances">
-        </section>
-        <section class="public-transportation">
-          <h3>Public transportation</h3>
-          <p></p>
-        </section>
-        <section class="hitchhikers">
-        </section>
-      </section>
-    </main>
+
+
+      </div>
+
+
+      </main>
+
     <footer>
-      <!-- Her bør innholdet være den samme for hver side.
-        - Navn på prosjektmedarbeidere
-        -
-      -->
+      <h3 id="footer_overskrift">Om BIS</h3>
+      <p>
+        Bergen International Student er en side laget for faget INFO134 på UIB.
+        Dette er laget av gruppemedlemmene:
+        Her kan det også stå noe helt annet.
+        Kan kopieres til de andre da.
+      </p>
+      <p>
+        <ul>
+            <li>Nora Gedde (nge005)</li>
+            <li>Tormod Renberg Lerøy</li>
+            <li>Roy H. Jenssen</li>
+            <li>Øyvind Johannessen</li>
+        </ul>
+      </p>
     </footer>
+    <!-- <script>
+function myFunction(){
+    document.getElementsByClassName("dating").removeAttribute("hidden");
+  }
+</script> -->
   </body>
+
 </html>
